@@ -1,5 +1,5 @@
 {% set name = "dynophores" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dominiquesydow/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 474915881278dfc1c6f7045bee235397a4ab6680e54653c17946d93779c2a75f
+  sha256: 6776fa1e360907a9bd51086a87123aabf4579954894a2e2e16fb68335b9b16a1
 
 build:
   noarch: python
@@ -29,7 +29,9 @@ requirements:
     - jupyter
     - jupyterlab
     - ipywidgets
+    - ipympl
     - nglview
+    - rdkit
     - mdanalysis
 
 test:
