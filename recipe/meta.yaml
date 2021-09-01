@@ -1,5 +1,5 @@
 {% set name = "dynophores" %}
-{% set version = "0.2" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dominiquesydow/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 6776fa1e360907a9bd51086a87123aabf4579954894a2e2e16fb68335b9b16a1
+  sha256: 4eeb0233818b65f9e9d99b8b8fe8ab86ed5c12ac818556cdb1ce72d05686443c
 
 build:
   noarch: python
