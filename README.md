@@ -1,7 +1,7 @@
 About dynophores
 ================
 
-Home: https://github.com/dominiquesydow/dynophores
+Home: https://github.com/wolberlab/dynophores
 
 Package license: MIT
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dynophores-feed
 
 Summary: Dynamic pharmacophore modeling of molecular interactions
 
-Development: https://github.com/dominiquesydow/dynophores
+Development: https://github.com/wolberlab/dynophores
 
 Documentation: https://dynophores.readthedocs.io/en/latest/
 

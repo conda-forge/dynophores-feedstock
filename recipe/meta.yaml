@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - dynoviz = dynophores.cli:main
@@ -41,7 +41,7 @@ test:
     - dynoviz -h
 
 about:
-  home: https://github.com/dominiquesydow/dynophores
+  home: https://github.com/wolberlab/dynophores
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -52,7 +52,7 @@ about:
     of molecular interactions between a macromolecule and a ligand 
     throughout an MD simulation.
   doc_url: https://dynophores.readthedocs.io/en/latest/
-  dev_url: https://github.com/dominiquesydow/dynophores
+  dev_url: https://github.com/wolberlab/dynophores
 
 extra:
   recipe-maintainers:
