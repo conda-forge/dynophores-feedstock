@@ -1,5 +1,5 @@
 {% set name = "dynophores" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/dominiquesydow/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 4eeb0233818b65f9e9d99b8b8fe8ab86ed5c12ac818556cdb1ce72d05686443c
+  sha256: 0a8d72793d1d35d586e386c3eb57f72b5ba4d80600b0f71fcd34b764e13ee0fb
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - dynoviz = dynophores.cli:main
 
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6
     - numpy
-    - pandas  
+    - pandas
     - matplotlib-base
     - seaborn
     - jupyter
@@ -45,7 +45,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Dynamic pharmacophore modeling of molecular interactions'
+  summary: Dynamic pharmacophore modeling of molecular interactions
   description: |
     Dynamic pharmacophore modeling of molecular interactions.
     Dynophores are an intuitive tool to explore the dynamics 
