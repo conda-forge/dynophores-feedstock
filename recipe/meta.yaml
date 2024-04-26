@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/dominiquesydow/{{ name|lower }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/wolberlab/{{ name|lower }}/archive/v{{ version }}.tar.gz
   sha256: d3bbbdfce1550af8663fd9d85d33ad139ad59257e80017a55da8728a2636a8c6
 
 build:
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python >=3.6
+    - python>=3.12
     - numpy
     - pandas
     - matplotlib-base
