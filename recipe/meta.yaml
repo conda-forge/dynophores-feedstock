@@ -1,17 +1,17 @@
 {% set name = "dynophores" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/dominiquesydow/{{ name|lower }}/archive/v{{ version }}.tar.gz
-  sha256: 4eeb0233818b65f9e9d99b8b8fe8ab86ed5c12ac818556cdb1ce72d05686443c
+  url: https://github.com/wolberlab/{{ name|lower }}/archive/v{{ version }}.tar.gz
+  sha256: d3bbbdfce1550af8663fd9d85d33ad139ad59257e80017a55da8728a2636a8c6
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - dynoviz = dynophores.cli:main
@@ -21,9 +21,9 @@ requirements:
     - python >=3.6
     - pip
   run:
-    - python >=3.6
+    - python >=3.12
     - numpy
-    - pandas  
+    - pandas
     - matplotlib-base
     - seaborn
     - jupyter
