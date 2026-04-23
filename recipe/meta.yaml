@@ -1,3 +1,4 @@
+{% set python_min = '3.12' %}
 {% set name = "dynophores" %}
 {% set version = "0.3.0" %}
 
@@ -11,17 +12,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
     - dynoviz = dynophores.cli:main
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.12
+    - python >={{ python_min }}
     - numpy
     - pandas
     - matplotlib-base
@@ -35,6 +36,8 @@ requirements:
     - mdanalysis
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dynophores
   commands:
